@@ -6,6 +6,11 @@ namespace ConstruindoAPI.Models
     public class ListPessoas
     {
         public IList<Pessoas> Results { get; set; }
+
+        internal object OrderBy(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class Pessoas
@@ -27,6 +32,6 @@ namespace ConstruindoAPI.Models
         public DateTime Edited { get; set; }
         public string Url { get; set; }
 
-
+       
     }
 }
